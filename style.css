@@ -78,25 +78,72 @@ ul {
 
 /* background khusus per bagian */
 .tentang {
+  position: relative;
+  color: #fff;
   background: url('https://source.unsplash.com/1200x800/?education,students') center/cover no-repeat;
-  color: #fff;
   background-attachment: fixed;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.tentang h2, .tentang h3 { color: #fff; background: rgba(0,0,0,0.4); padding: 5px 10px; border-radius: 5px; }
 
+.tentang::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* overlay gelap transparan */
+  z-index: 0;
+}
+
+.tentang * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === PRODI TEKNIK INFORMATIKA === */
 .prodi-ti {
+  position: relative;
+  color: #fff;
   background: url('https://source.unsplash.com/1200x800/?coding,software') center/cover no-repeat;
-  color: #fff;
   background-attachment: fixed;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.prodi-ti h2, .prodi-ti h3 { color: #fff; background: rgba(0,0,0,0.4); padding: 5px 10px; border-radius: 5px; }
 
-.prodi-sti {
-  background: url('https://source.unsplash.com/1200x800/?data,network') center/cover no-repeat;
-  color: #fff;
-  background-attachment: fixed;
+.prodi-ti::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
 }
-.prodi-sti h2, .prodi-sti h3 { color: #fff; background: rgba(0,0,0,0.4); padding: 5px 10px; border-radius: 5px; }
+
+.prodi-ti * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === PRODI SISTEM & TEKNOLOGI INFORMASI === */
+.prodi-sti {
+  position: relative;
+  color: #fff;
+  background: url('https://source.unsplash.com/1200x800/?data,network') center/cover no-repeat;
+  background-attachment: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.prodi-sti::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.prodi-sti * {
+  position: relative;
+  z-index: 1;
+}
 
 .kontak {
   background: linear-gradient(135deg, #1e90ff, #0a1a3f);
