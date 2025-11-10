@@ -35,7 +35,7 @@ header .logo {
   height: 90px;
   object-fit: contain; 
   margin-left: 20px;
-  text-align: right;
+  align: right;
 }
 
 .navbar {
