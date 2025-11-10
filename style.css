@@ -30,6 +30,30 @@ body {
   font-weight: 500;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* biru navy */
+  padding: 10px 40px;
+  color: white;
+  height: 90px; /* batas tinggi header */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  width: 60px;        /* atur ukuran gambar */
+  height: auto;
+  object-fit: contain; /* biar gak gepeng */
+  margin-left: 20px;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
 .navbar {
   margin-top: 0.5rem;
 }
